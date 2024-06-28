@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.px-container {
+	@apply px-6 md:pe-20 md:ps-14 lg:pe-24 2xl:px-36 md:py-10 pt-6;
+}
+
+.text-console {
+	font-family: 'M PLUS Code Latin', monospace;
+}
+
+.text-tag {
+	@apply text-sm md:text-lg lg:text-xl xl:text-2xl;
+}
+
+.text-inside {
+	@apply text-xl lg:text-3xl xl:text-3xl;
+}
+
+.text-tag-project {
+	@apply text-sm md:text-base lg:text-lg xl:text-xl;
+}
+
+.text-inside-project {
+	@apply text-xl lg:text-2xl xl:text-2xl;
+}
