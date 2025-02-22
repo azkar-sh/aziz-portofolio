@@ -85,7 +85,7 @@
 				</button>
 			</div>
 
-			<div class="relative">
+			<!-- <div class="relative">
 				<button class="nav-button" on:click={handleShowOptions}>
 					<Icon icon="ic:outline-draw" class="md:w-7 md:h-7 w-6 h-6" />
 					{#if isMaximized}
@@ -117,7 +117,7 @@
 						</div>
 					</div>
 				{/if}
-			</div>
+			</div> -->
 		</div>
 	</nav>
 </header>

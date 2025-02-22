@@ -13,8 +13,6 @@
 	styleStore.subscribe((value) => {
 		style = value.theme;
 	});
-
-	console.log(style);
 </script>
 
 <Toast />

@@ -1,12 +1,13 @@
 <script>
 	const toggleProject = () => {
 		const project = document.getElementById('project');
+		project.style.height = '100vh';
 		project.scrollIntoView({ behavior: 'smooth' });
-		project.className = 'animate__animated animate__fadeInLeft';
+		project.className = '';
 	};
 </script>
 
-<section id="hero" class="bg-background-1 h-screen animate__animated animate__fadeInRight">
+<section id="hero" class="bg-background-1 h-screen">
 	<div class="px-container flex items-center justify-start w-full h-full" id="hero-content">
 		<div
 			class="flex flex-col justify-center gap-2 text-console text-xl lg:text-3xl xl:text-3xl border-l-2 border-white ps-5"
@@ -42,7 +43,7 @@
 					<div class="p-2 flex items-center gap-2">
 						<span class="text-white tracking-wide font-bold">I'm</span>
 						<div class="p-2 bg-white">
-							<span class="text-background-1 font-bold tracking-widest">Aziz</span>
+							<span class="text-background-1 font-bold tracking-widest">AZIZ</span>
 						</div>
 					</div>
 
@@ -58,12 +59,10 @@
 
 					<div class="p-2 flex items-center gap-2">
 						<div class="p-2 bg-white">
-							<span class="text-background-1 font-bold">Web Developer</span>
+							<span class="text-background-1 font-bold">Fullstack Developer</span>
 						</div>
 
-						<span class="text-white tracking-wide font-bold hidden md:inline">
-							from Jakarta, Indonesia</span
-						>
+						<span class="text-white tracking-wide font-bold hidden md:inline"> from Indonesia</span>
 					</div>
 
 					<span class="text-tag text-white">
@@ -88,10 +87,6 @@
 
 			<span class="text-tag text-white">
 				{'</section>'}
-			</span>
-
-			<span class="text-tag text-white my-2">
-				{'</br>'}
 			</span>
 
 			<div class="flex md:flex-row flex-col gap-2 md:items-center">

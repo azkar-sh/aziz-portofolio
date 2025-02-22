@@ -5,7 +5,7 @@
 	};
 </script>
 
-<section id="contact" class="bg-background-1 h-screen">
+<section id="contact" class="bg-background-1 min-h-screen flex items-center justify-center">
 	<div class="px-container flex items-center justify-start w-full h-full">
 		<div
 			class="flex flex-col justify-center gap-2 text-console text-xl lg:text-3xl xl:text-3xl border-l-2 border-white ps-5"
@@ -23,7 +23,7 @@
 					<div class="p-1 w-fit">
 						<div class=" p-1">
 							<div class="p-1 md:p-2 bg-white">
-								<span class="text-background-1 font-semibold">Aziz Akbar Ashshiddiq</span>
+								<span class="text-background-1 font-semibold">Contact</span>
 							</div>
 						</div>
 					</div>
@@ -96,10 +96,6 @@
 
 			<span class="text-tag-project text-white">
 				{'</section>'}
-			</span>
-
-			<span class="text-tag-project text-white my-2">
-				{'</br>'}
 			</span>
 
 			<div class="flex md:flex-row flex-col gap-2 md:items-center">
