@@ -8,6 +8,9 @@ export const personalInfo = {
 	whatsappUrl: 'https://wa.me/628992099447',
 	linkedinUrl: 'https://www.linkedin.com/in/aziz-ashshiddiq/',
 	linkedinLabel: 'Aziz Ashshiddiq | LinkedIn',
+	resumeUrl:
+		'https://1drv.ms/b/c/3678f8ce771077f3/IQB-ouUdts7fRa5yPWMaIuh0AVgmS5ZFsyFSDBm7a8KOHLk?e=nrCiEz',
+	githubUrl: 'https://github.com/azkar-sh',
 	greeting: 'Welcome !'
 };
 
@@ -23,10 +26,39 @@ export const aboutData = {
 		'Spoken Languages: Bahasa Indonesia, English, Arabic'
 	],
 	experience: [
-		'PT. Logos Indonesia, Jakarta - Full-Stack Developer (Oct 2025 - Apr 2026)',
-		'PT. Aplikasi Pekerja Indonesia, Jimbaran Bali - Front-End Developer (Feb 2024 - Oct 2025)',
-		'PT. Semesta Arus Teknologi, Jakarta - Front-End Developer (Jan 2023 - Jan 2024)'
+		{
+			name: 'PT. Logos Indonesia, Jakarta',
+			role: 'Full-Stack Developer',
+			duration: 'Oct 2025 - Apr 2026',
+			description: [
+				'Developed responsive web applications using Next.js and Tailwind CSS with a focus on clean, accessible, and user-friendly interfaces.',
+				'Built backend features using Node.js, Nest.js, Prisma, and PostgreSQL, including database modeling and REST API development.',
+				'Improved code maintainability by creating reusable components and following clean coding practices across the project.'
+			]
+		},
+		{
+			name: 'PT. Aplikasi Pekerja Indonesia, Jimbaran Bali',
+			role: 'Front-End Developer',
+			duration: 'Feb 2024 - Oct 2025',
+			description: [
+				'Developed responsive web applications using React.js and Next.js for recruitment and HR management platforms.',
+				'Collaborated with backend developers to integrate REST APIs and present data accurately across the application.',
+				'Worked closely with designers, product teams, and developers to deliver features that met both user and business requirements.',
+				'Redesigned and enhanced multiple Back Office pages, improving usability and creating a more consistent user experience.'
+			]
+		},
+		{
+			name: 'PT. Semesta Arus Teknologi, Jakarta',
+			role: 'Front-End Developer',
+			duration: 'Jan 2023 - Jan 2024',
+			description: [
+				'Developed responsive web applications using Svelte and modern frontend development practices.',
+				'Worked with system analysts to translate wireframes and business requirements into functional user interfaces.',
+				'Collaborated with cross-functional teams to deliver features based on project requirements and user needs.'
+			]
+		}
 	],
+
 	education:
 		"Bachelor's degree in Computer Science (Teknik Informatika), Pamulang University, Tangerang (Sept 2017 - Mar 2021), GPA 3.34."
 };

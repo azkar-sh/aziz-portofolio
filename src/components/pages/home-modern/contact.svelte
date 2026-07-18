@@ -104,6 +104,24 @@
 						class="w-5 h-5 text-background-2/70 group-hover:text-background-2"
 					/>
 				</a>
+
+				<a
+					href={personalInfo.resumeUrl}
+					target="__blank"
+					class="group flex items-center justify-between gap-4 rounded-2xl bg-white/95 text-background-2 px-4 md:px-5 py-4 hover:bg-white transition-colors"
+				>
+					<div class="flex items-center gap-3">
+						<span
+							class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-background-2 text-white"
+						>
+							<Icon icon="solar:document-linear" class="w-5 h-5" />
+						</span>
+						<div>
+							<p class="text-xs uppercase tracking-wider text-background-2/60">Resume</p>
+							<p class="text-sm md:text-base font-semibold">View My Resume</p>
+						</div>
+					</div>
+				</a>
 			</div>
 
 			<button

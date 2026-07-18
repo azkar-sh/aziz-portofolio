@@ -55,8 +55,31 @@
 				Experience
 			</h2>
 			<div class="space-y-3 text-background-2/85">
-				{#each aboutData.experience as role}
-					<p class="px-4 py-3 rounded-2xl border border-background-2/10 bg-slate-50">{role}</p>
+				{#each aboutData.experience as item}
+					<details
+						class="group rounded-2xl border border-background-2/10 bg-slate-50 overflow-hidden"
+					>
+						<summary
+							class="list-none cursor-pointer px-4 py-3 flex items-start justify-between gap-4"
+						>
+							<div>
+								<p class="font-semibold text-background-2">{item.name}</p>
+								<p class="text-sm text-background-2/70">{item.role} • {item.duration}</p>
+							</div>
+							<span
+								class="mt-1 text-background-2/60 transition-transform duration-200 group-open:rotate-180"
+								aria-hidden="true"
+							>
+								<Icon icon="solar:alt-arrow-down-linear" class="w-5 h-5" />
+							</span>
+						</summary>
+
+						<div class="border-t border-background-2/10 px-4 py-3 space-y-2">
+							{#each item.description as description}
+								<p class="leading-relaxed">{description}</p>
+							{/each}
+						</div>
+					</details>
 				{/each}
 			</div>
 		</article>

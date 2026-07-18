@@ -28,8 +28,18 @@
 					Experience
 				</h2>
 				<div class="space-y-3 text-tag-project text-white/90">
-					{#each aboutData.experience as role}
-						<p>{role}</p>
+					{#each aboutData.experience as item}
+						<details class="border border-white/20 px-3 py-2">
+							<summary class="cursor-pointer font-semibold list-none">
+								{item.name}
+							</summary>
+							<p class="mt-2 text-white/75">{item.role} | {item.duration}</p>
+							<ul class="mt-2 space-y-1 list-disc list-inside text-white/90">
+								{#each item.description as description}
+									<li>{description}</li>
+								{/each}
+							</ul>
+						</details>
 					{/each}
 				</div>
 			</div>
