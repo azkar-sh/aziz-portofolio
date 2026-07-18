@@ -2,13 +2,13 @@
 	import Icon from '@iconify/svelte';
 	import { styleStore } from '../store/styleStore.js';
 
-	let style,
+	let currentTheme = 'code',
 		isMaximized = false,
 		activeSection = 'hero',
 		showOptions = false;
 
 	styleStore.subscribe((value) => {
-		style = value;
+		currentTheme = value?.theme ?? 'code';
 	});
 
 	const toggleMaximize = () => {
@@ -18,6 +18,7 @@
 
 	const handleScroll = (section) => {
 		const hero = document.getElementById('hero');
+		const profile = document.getElementById('about');
 		const project = document.getElementById('project');
 		const contact = document.getElementById('contact');
 
@@ -25,6 +26,8 @@
 
 		if (section === 'hero') {
 			hero.scrollIntoView({ behavior: 'smooth' });
+		} else if (section === 'about') {
+			profile.scrollIntoView({ behavior: 'smooth' });
 		} else if (section === 'project') {
 			project.scrollIntoView({ behavior: 'smooth' });
 		} else if (section === 'contact') {
@@ -47,7 +50,7 @@
 
 <header class="absolute md:h-full right-0 bottom-0 w-full md:w-auto z-10">
 	<nav
-		class="py-3 md:px-2 px-4 h-full backdrop-blur-xl flex {style === 'code'
+		class="py-3 md:px-2 px-4 h-full backdrop-blur-xl flex {currentTheme === 'code'
 			? 'bg-white/10 '
 			: 'bg-gradient-to-b from-slate-500/85 to-black/85'}"
 	>
@@ -68,6 +71,15 @@
 						<span class="hidden md:inline"> HOME </span>
 					{/if}
 				</button>
+				<button class="nav-button" on:click={() => handleScroll('about')}>
+					<Icon
+						icon="material-symbols:person-outline-rounded"
+						class="md:w-7 md:h-7 w-6 h-6 text-white/80"
+					/>
+					{#if isMaximized}
+						<span class="hidden md:inline"> ABOUT </span>
+					{/if}
+				</button>
 				<button class="nav-button" on:click={() => handleScroll('project')}>
 					<Icon
 						icon="material-symbols:home-work-outline-rounded"
@@ -85,7 +97,7 @@
 				</button>
 			</div>
 
-			<!-- <div class="relative">
+			<div class="relative">
 				<button class="nav-button" on:click={handleShowOptions}>
 					<Icon icon="ic:outline-draw" class="md:w-7 md:h-7 w-6 h-6" />
 					{#if isMaximized}
@@ -94,7 +106,8 @@
 				</button>
 				{#if showOptions}
 					<div
-						class="absolute bottom-16 right-0 md:bottom-0 md:right-14 p-2 w-40 {style === 'code'
+						class="absolute bottom-16 right-0 md:bottom-0 md:right-14 p-2 w-40 {currentTheme ===
+						'code'
 							? 'bg-white/10'
 							: 'bg-black/75'} rounded-md shadow-lg backdrop-blur-lg"
 					>
@@ -117,7 +130,7 @@
 						</div>
 					</div>
 				{/if}
-			</div> -->
+			</div>
 		</div>
 	</nav>
 </header>

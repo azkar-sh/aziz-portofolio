@@ -3,11 +3,11 @@
 	import { styleStore } from '../store/styleStore.js';
 	import { onMount } from 'svelte';
 
-	let style;
+	let currentTheme = 'code';
 	let isShow = false;
 
 	styleStore.subscribe((value) => {
-		style = value;
+		currentTheme = value?.theme ?? 'code';
 	});
 
 	const handleStyleChange = (theme) => {
@@ -21,7 +21,7 @@
 		if (contact) {
 			const observer = new IntersectionObserver((entries) => {
 				entries.forEach((entry) => {
-					if (entry.isIntersecting && style.theme === 'code') {
+					if (entry.isIntersecting && currentTheme === 'code') {
 						isShow = true;
 					} else {
 						isShow = false;

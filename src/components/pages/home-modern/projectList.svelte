@@ -1,111 +1,56 @@
-<span class="text-console text-inside-project bg-white px-2 py-1 my-4 font-semibold"
-	>Project List ↲
-</span>
+<script>
+	import Icon from '@iconify/svelte';
+	import { projects as projectList } from '$lib/portfolioData';
 
-<div class="flex flex-col text-console text-white border-l ps-2 my-4 border-white">
-	<div class="flex flex-col lg:flex-row gap-2 lg:items-center">
-		<span class="text-tag-project">{'<h1 class="text-bold">'} </span>
-		<a
-			href="https://jobseeker.services/"
-			target="__blank"
-			class="text-inside-project bg-white font-semibold p-1 text-background-2 w-fit"
-			>Jobseeker Service Website</a
+	const projectIcons = [
+		'solar:planet-linear',
+		'solar:window-frame-linear',
+		'solar:buildings-2-linear',
+		'solar:magic-stick-3-linear'
+	];
+</script>
+
+<div class="space-y-4 text-background-2">
+	{#each projectList as project, i}
+		<article
+			class="bg-white/95 rounded-3xl p-5 md:p-7 shadow-md border border-background-2/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
 		>
-		<span class="text-tag-project">{'</h1>'} </span>
-	</div>
-	<div class="flex flex-col gap-2 text-white/70">
-		<span class="text-tag-project">{'<!--'} </span>
-		<span class="text-tag-project"
-			>Jobseeker Service is a website that provide high quality service to help implement strategic
-			action to optimize the company efficiently, by being the solution to all business problems.
-			This website is built using NextJs and TailwindCSS.</span
-		>
-		<span class="text-tag-project">{'-->'} </span>
-	</div>
-	<div class="flex flex-col lg:flex-row gap-2 lg:items-center">
-		<span class="text-tag-project"
-			>{'<a href="https://jobseeker.services/" class="text-bold">'}
-		</span>
-		<a
-			href="https://jobseeker.services/"
-			target="__blank"
-			class="text-inside-project bg-white font-semibold p-1 text-background-2 w-fit"
-			>Go To Website ⬈</a
-		>
-		<span class="text-tag-project">{'</a>'} </span>
-	</div>
+			<div class="flex flex-col gap-3">
+				<div class="flex items-center justify-between gap-3">
+					<div class="flex items-center gap-3">
+						<span
+							class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-background-2 text-white"
+						>
+							<Icon icon={projectIcons[i] ?? 'solar:folder-with-files-linear'} class="w-5 h-5" />
+						</span>
+						<p class="text-xs uppercase tracking-[0.18em] text-background-2/55">
+							Project {String(i + 1).padStart(2, '0')}
+						</p>
+					</div>
+					<Icon icon="solar:arrow-up-right-linear" class="w-5 h-5 text-background-2/65" />
+				</div>
+
+				<a
+					href={project.link}
+					target="__blank"
+					class="text-modern-display text-xl md:text-2xl font-semibold tracking-tight underline decoration-2 underline-offset-4"
+				>
+					{project.name}
+				</a>
+				<p class="text-sm md:text-base text-background-2/80 leading-relaxed">
+					{project.description}
+				</p>
+				<a
+					href={project.link}
+					target="__blank"
+					class="w-fit px-4 py-2 bg-background-2 text-white rounded-full font-medium shadow hover:shadow-md transition-shadow"
+				>
+					Visit Website
+				</a>
+			</div>
+		</article>
+		{#if i < projectList.length - 1}
+			<div class="h-px bg-background-2/15"></div>
+		{/if}
+	{/each}
 </div>
-
-<span class="text-console text-white"> ------------ </span>
-
-<div class="flex flex-col text-console text-white border-l ps-2 my-4 border-white">
-	<div class="flex flex-col lg:flex-row gap-2 lg:items-center">
-		<span class="text-tag-project">{'<h1 class="text-bold">'} </span>
-		<a
-			href="https://jobseeker.software/"
-			target="__blank"
-			class="text-inside-project bg-white font-semibold p-1 text-background-2 w-fit"
-			>Jobseeker Software Website</a
-		>
-		<span class="text-tag-project">{'</h1>'} </span>
-	</div>
-	<div class="flex flex-col gap-2 text-white/70">
-		<span class="text-tag-project">{'<!--'} </span>
-		<span class="text-tag-project"
-			>Jobseeker Software is a website that provide high quality software for the all business
-			scale. From Human Resources Management, Employee analyzing and etc. This website is built
-			using NextJs and TailwindCSS.</span
-		>
-		<span class="text-tag-project">{'-->'} </span>
-	</div>
-	<div class="flex flex-col lg:flex-row gap-2 lg:items-center">
-		<span class="text-tag-project"
-			>{'<a href="https://jobseeker.software/" class="text-bold">'}
-		</span>
-		<a
-			href="https://jobseeker.software/"
-			target="__blank"
-			class="text-inside-project bg-white font-semibold p-1 text-background-2 w-fit"
-			>Go To Website ⬈</a
-		>
-		<span class="text-tag-project">{'</a>'} </span>
-	</div>
-</div>
-
-<span class="text-console text-white"> ------------ </span>
-
-<div class="flex flex-col text-console text-white border-l ps-2 my-4 border-white">
-	<div class="flex flex-col lg:flex-row gap-2 lg:items-center">
-		<span class="text-tag-project">{'<h1 href="#" class="text-bold">'} </span>
-		<a
-			href="#"
-			target="__blank"
-			class="text-inside-project bg-white font-semibold p-1 text-background-2 w-fit"
-			>Client Web Portofolio</a
-		>
-		<span class="text-tag-project">{'</h1>'} </span>
-	</div>
-	<div class="flex flex-col gap-2 text-white/70">
-		<span class="text-tag-project">{'<!--'} </span>
-		<span class="text-tag-project">
-			The custom web portfolios, each meticulously crafted to reflect client visions, personalized
-			touches, and surpassing expectations. The web portfolios are built using NextJs, ReactJs or
-			SvelteJs based on client request and TailwindCSS for responsive design and stunning styling.
-		</span>
-		<span class="text-tag-project">{'-->'} </span>
-	</div>
-	<div class="flex flex-col lg:flex-row gap-2 lg:items-center">
-		<span class="text-tag-project">{'<a href="#" class="text-bold">'} </span>
-		<a
-			href="#"
-			target="__blank"
-			class="text-inside-project bg-white font-semibold p-1 text-background-2 w-fit"
-			>Go To Website ⬈</a
-		>
-		<span class="text-tag-project">{'</a>'} </span>
-	</div>
-</div>
-
-<span class="text-console text-inside-project bg-white px-2 py-1 my-4 font-semibold"
-	>End List ↲
-</span>
