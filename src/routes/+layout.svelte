@@ -34,9 +34,15 @@
 <svelte:head>
 	<title>{defaultTitle}</title>
 	<meta name="description" content={defaultDescription} />
-	<meta name="keywords" content="Aziz Akbar Ashshiddiq, Fullstack Developer, React.js, Next.js, Svelte, NestJS, Portfolio, Indonesia" />
+	<meta
+		name="keywords"
+		content="Aziz Akbar Ashshiddiq, Fullstack Developer, React.js, Next.js, Svelte, NestJS, Portfolio, Indonesia"
+	/>
 	<meta name="author" content={personalInfo.fullName} />
-	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+	<meta
+		name="robots"
+		content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+	/>
 	<meta name="googlebot" content="index, follow" />
 	<meta name="theme-color" content="#070F2B" />
 
@@ -56,7 +62,9 @@
 	<meta name="twitter:description" content={defaultDescription} />
 	<meta name="twitter:image" content={ogImage} />
 
-	<script type="application/ld+json">{JSON.stringify(structuredData)}</script>
+	<script type="application/ld+json">
+{JSON.stringify(structuredData)}
+	</script>
 </svelte:head>
 
 <div class="flex flex-col-reverse md:flex-row-reverse bg-background-2 h-screen w-screen">
