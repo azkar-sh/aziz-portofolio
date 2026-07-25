@@ -20,12 +20,6 @@
 
 				<div class="flex flex-col md:flex-row md:items-center gap-1">
 					<div class="p-2 flex items-center gap-2">
-						<span class="text-white tracking-wide font-semibold">{personalInfo.location}</span>
-					</div>
-				</div>
-
-				<div class="flex flex-col md:flex-row md:items-center gap-1">
-					<div class="p-2 flex items-center gap-2">
 						<a
 							href={personalInfo.whatsappUrl}
 							class="text-white tracking-wide font-semibold hover:text-background-1 hover:bg-white px-1"
@@ -56,6 +50,18 @@
 							target="__blank"
 						>
 							{personalInfo.linkedinLabel}</a
+						>
+					</div>
+				</div>
+
+				<div class="flex flex-col md:flex-row md:items-center gap-1">
+					<div class="p-2 flex items-center gap-2">
+						<a
+							href={personalInfo.resumeUrl}
+							class="text-white tracking-wide font-semibold hover:text-background-1 hover:bg-white px-1"
+							target="__blank"
+						>
+							View my resume</a
 						>
 					</div>
 				</div>
