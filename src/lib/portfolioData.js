@@ -68,24 +68,28 @@ export const projects = [
 		name: 'Personal Web Portfolio',
 		link: 'https://azkar-portofolio.vercel.app',
 		description:
-			'Developed using Svelte.js and TailwindCSS to deliver a responsive and elegant personal portfolio experience with lightweight and performant components.'
+			'Developed using Svelte.js and TailwindCSS to deliver a responsive and elegant personal portfolio experience with lightweight and performant components.',
+		tools: ['Svelte.js', 'TailwindCSS', 'Vite', 'Framer Motion']
 	},
 	{
 		name: 'Company Website',
 		link: 'https://www.jobseeker.software/',
 		description:
-			'Developed using Next.js and TailwindCSS with WordPress CMS integration to support easy content management, SEO, and responsive presentation.'
+			'Developed using Next.js and TailwindCSS with WordPress CMS integration to support easy content management, SEO, and responsive presentation.',
+		tools: ['Next.js', 'TailwindCSS', 'WordPress CMS', 'Framer Motion']
 	},
 	{
 		name: 'Company Job Portal',
 		link: 'https://karir-sejahteramitrasolusi.jobseeker.software/',
 		description:
-			'Built with Next.js and TailwindCSS, using Zustand for state management and multilingual support to improve hiring workflow accessibility.'
+			'Built with Next.js and TailwindCSS, using Zustand for state management and multilingual support to improve hiring workflow accessibility.',
+		tools: ['Next.js', 'TailwindCSS', 'Zustand', 'Framer Motion']
 	},
 	{
 		name: 'Your AI Playground',
 		link: 'https://your-ai-playground.vercel.app/',
 		description:
-			'A web application where users can test AI integrations for countless possibilities, built with Next.js, TailwindCSS, and Framer Motion.'
+			'A web application where users can test AI integrations for countless possibilities, built with Next.js, TailwindCSS, and Framer Motion.',
+		tools: ['Next.js', 'TailwindCSS', 'Framer Motion']
 	}
 ];
