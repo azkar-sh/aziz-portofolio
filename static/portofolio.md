@@ -1,6 +1,6 @@
 # AZIZ AKBAR ASHSHIDDIQ
 
-**Fullstack Developer | React.js | Next.js | Svelte | Nest.js**  
+**Frontend Engineer | React.js | Next.js | Svelte | Nest.js**
 Tangerang, Indonesia | +62 899 2099 447 | akbar.dizir@gmail.com
 
 ---

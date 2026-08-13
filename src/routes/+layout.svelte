@@ -5,7 +5,7 @@
 	import Navbar from '../components/navbar.svelte';
 	import { aboutData, personalInfo } from '$lib/portfolioData';
 
-	const siteUrl = 'https://azkar-portofolio.vercel.app';
+	const siteUrl = 'https://akbarash.com';
 	const siteName = personalInfo.fullName;
 	const defaultTitle = `${personalInfo.fullName} | ${personalInfo.role}`;
 	const defaultDescription = aboutData.profile;
@@ -39,6 +39,7 @@
 		content="Aziz Akbar Ashshiddiq, Fullstack Developer, React.js, Next.js, Svelte, NestJS, Portfolio, Indonesia"
 	/>
 	<meta name="author" content={personalInfo.fullName} />
+	<meta name="google-site-verification" content="_KBtCwkVrryop95hgp6jHEKthuJBeJkt3IhpUcCCdBs" />
 	<meta
 		name="robots"
 		content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"

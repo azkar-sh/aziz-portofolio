@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://azkar-portofolio.vercel.app/sitemap.xml
+Sitemap: https://akbarash.com/sitemap.xml
