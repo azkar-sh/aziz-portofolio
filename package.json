@@ -33,6 +33,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@vercel/analytics": "^2.0.1",
 		"animate.css": "^4.1.1"
 	}
 }
