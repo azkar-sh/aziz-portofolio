@@ -181,7 +181,6 @@
 	.nav-button-toggle.code-theme:hover,
 	.theme-option.code-theme:hover {
 		background: rgba(148, 163, 184, 0.1);
-		box-shadow: inset 0 0 0 1px rgba(34, 211, 238, 0.2);
 		color: rgba(240, 249, 255, 1);
 	}
 
