@@ -15,7 +15,7 @@
 
 <section
 	id="project"
-	class={`min-h-screen flex items-center  ${showContent ? 'bg-background-2 ' : 'bg-white'}`}
+	class={`min-h-screen flex items-center  ${showContent ? 'bg-background-3 ' : 'bg-white'}`}
 >
 	<div class="px-container flex justify-center flex-col h-full text-console">
 		<ProjectList />
