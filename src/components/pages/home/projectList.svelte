@@ -13,7 +13,7 @@
 		}
 	};
 
-	const filterList = ['selected', 'frontend', 'fullstack', 'backend', 'mobile', 'research'];
+	const filterList = ['selected', 'frontend', 'fullstack', 'mobile', 'research'];
 
 	const handleFilterClick = (filter) => {
 		selectedFilter = filter;

@@ -127,7 +127,7 @@
 			</div>
 
 			<div class="relative">
-				<button
+				<!-- <button
 					class:code-theme={currentTheme === 'code'}
 					class="nav-button"
 					on:click={handleShowOptions}
@@ -136,7 +136,7 @@
 					{#if isMaximized}
 						<span class="hidden md:inline uppercase tracking-[0.2em] text-[10px]"> THEME </span>
 					{/if}
-				</button>
+				</button> -->
 				{#if showOptions}
 					<div
 						class="absolute bottom-16 right-0 md:bottom-0 md:right-14 p-2 w-40 {currentTheme ===
