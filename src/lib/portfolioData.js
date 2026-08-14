@@ -67,6 +67,7 @@ export const projects = [
 	{
 		name: 'Personal Web Portfolio',
 		link: 'https://akbarash.com/',
+		filter: 'frontend',
 		description:
 			'Developed using Svelte.js and TailwindCSS to deliver a responsive and elegant personal portfolio experience with lightweight and performant components. The website is designed to showcase professional profile effectively but also optimized for SEO and accessibility. Combining modern web technologies and best practices, the portfolio provides a seamless user experience across devices.',
 		tools: ['Svelte.js', 'TailwindCSS', 'Vite', 'Framer Motion']
@@ -74,6 +75,7 @@ export const projects = [
 	{
 		name: 'Company Website',
 		link: 'https://www.jobseeker.software/',
+		filter: 'frontend',
 		description:
 			'Developed using Next.js and TailwindCSS with WordPress CMS integration to support easy content management, SEO, and responsive presentation. The website is designed to provide a professional and user-friendly experience for visitors, showcasing the company’s services and offerings effectively.',
 		tools: ['Next.js', 'TailwindCSS', 'WordPress CMS', 'Framer Motion']
@@ -81,6 +83,7 @@ export const projects = [
 	{
 		name: 'Company Job Portal',
 		link: 'https://karir-sejahteramitrasolusi.jobseeker.software/',
+		filter: 'frontend',
 		description:
 			'Built with Next.js and TailwindCSS, using Zustand for state management and multilingual support to improve hiring workflow accessibility. This portal is one of the company’s key platforms for recruitment, designed to provide a seamless experience for job seekers and employers alike. The portal is fully customizable based on client needs, with a focus on performance, accessibility, and user experience.',
 		tools: ['Next.js', 'TailwindCSS', 'Zustand', 'Framer Motion']
@@ -88,8 +91,25 @@ export const projects = [
 	{
 		name: 'Your AI Playground',
 		link: 'https://your-ai-playground.vercel.app/',
+		filter: 'fullstack',
 		description:
 			'A web application where users can test AI integrations for countless possibilities, built with Next.js, TailwindCSS, and Framer Motion. The AI is powered by Groq Cloud with Llama Model, allowing users to explore AI capabilities in a user-friendly environment. The application is designed to be responsive and accessible, providing a seamless experience for users to experiment with AI features.',
-		tools: ['Next.js', 'TailwindCSS', 'Framer Motion']
+		tools: ['Next.js', 'TailwindCSS', 'Framer Motion', 'Groq Cloud', 'Llama Model']
+	},
+	{
+		name: 'Member Redemption Application (Delapan Barbershop)',
+		link: 'https://play.google.com/store/apps/details?id=com.delapanpos.customerapp',
+		filter: 'mobile',
+		description:
+			'Developed a mobile application for member redemption using React Native and Expo, providing a seamless experience for users to redeem their points and rewards. The application is designed to be user-friendly and accessible, with a focus on performance and responsiveness across different devices.',
+		tools: ['React Native', 'Expo', 'TailwindCSS', 'Nativewind']
+	},
+	{
+		name: 'Human Resources Management Back Office',
+		link: '',
+		filter: 'frontend',
+		description:
+			'Developed a back-office application for human resources management using React.js and Next.js, providing a comprehensive solution for managing employee data, payroll, and other HR functions. The application is designed to be user-friendly and accessible, with a focus on performance and responsiveness across different devices.',
+		tools: ['React.js', 'TailwindCSS', 'Zustand', 'Yup']
 	}
 ];

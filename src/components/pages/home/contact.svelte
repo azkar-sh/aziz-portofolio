@@ -9,8 +9,7 @@
 		>
 			<div class="flex flex-col md:flex-row md:items-center gap-1">
 				<div class="p-1 w-fit">
-					<span
-						class="text-console text-inside-project bg-white px-2 py-1 my-4 font-semibold text-background-2 w-fit"
+					<span class="text-console bg-white px-2 py-1 my-4 font-semibold text-background-2 w-fit"
 						>Let's Connect!</span
 					>
 				</div>

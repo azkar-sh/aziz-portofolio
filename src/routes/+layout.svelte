@@ -64,7 +64,7 @@
 	<meta name="twitter:image" content={ogImage} />
 
 	<script type="application/ld+json">
-{JSON.stringify(structuredData)}
+		{JSON.stringify(structuredData)}
 	</script>
 </svelte:head>
 

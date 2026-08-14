@@ -4,7 +4,7 @@
 
 <span
 	class="text-console text-inside-project bg-white px-2 py-1 my-4 font-semibold text-background-2 w-fit"
-	>Project List</span
+	>Selected Project List</span
 >
 
 {#each projectList as project, i}
@@ -45,3 +45,10 @@
 		<span class="block text-white/40">------------</span>
 	{/if}
 {/each}
+<button
+	class="text-console text-inside-project text-white text-left mt-6 underline decoration-white/50 underline-offset-4 transition-opacity hover:opacity-80"
+	on:click={() => {
+		const contact = document.getElementById('contact');
+		contact.scrollIntoView({ behavior: 'smooth' });
+	}}>For more projects, let's connect!</button
+>
