@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	import Icon from '@iconify/svelte';
 	import { styleStore } from '../store/styleStore.js';
 	import { onMount } from 'svelte';
@@ -53,4 +53,4 @@
 			</button>
 		</div>
 	</div>
-{/if}
+{/if} -->

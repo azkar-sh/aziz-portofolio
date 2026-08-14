@@ -9,7 +9,7 @@ export const personalInfo = {
 	linkedinUrl: 'https://www.linkedin.com/in/aziz-ashshiddiq/',
 	linkedinLabel: 'Aziz Ashshiddiq | LinkedIn',
 	resumeUrl:
-		'https://1drv.ms/b/c/3678f8ce771077f3/IQB-ouUdts7fRa5yPWMaIuh0AVgmS5ZFsyFSDBm7a8KOHLk?e=nrCiEz',
+		'https://1drv.ms/b/c/3678f8ce771077f3/IQBFbhhi4wbnRYw_PRnqkMFeAdRRkqC31U6zxeSvm8UowaI?e=VLMj67',
 	githubUrl: 'https://github.com/azkar-sh',
 	greeting: 'Welcome !'
 };
@@ -111,5 +111,30 @@ export const projects = [
 		description:
 			'Developed a back-office application for human resources management using React.js and Next.js, providing a comprehensive solution for managing employee data, payroll, and other HR functions. The application is designed to be user-friendly and accessible, with a focus on performance and responsiveness across different devices.',
 		tools: ['React.js', 'TailwindCSS', 'Zustand', 'Yup']
+	},
+	{
+		name: 'Promotion Management',
+		link: '',
+		filter: 'fullstack',
+		description:
+			'Developed a promotion management application using React.js for Frontend and Nest.js for Backend, providing a comprehensive solution for managing promotions, discounts, and other marketing campaigns. The application is designed to be user-friendly and accessible, with a focus on performance and responsiveness across different devices.',
+		tools: ['React.js', 'TailwindCSS', 'Zustand', 'Yup', 'Nest.js', 'Prisma', 'PostgreSQL']
+	},
+	{
+		name: 'Research for Simple Additive Weigthing Method for Decision Support System',
+		link: 'https://1drv.ms/b/c/3678f8ce771077f3/IQCwrdjS_v-SQ6H6uVHcgr3pAdZyZwvKSJVN-aH-HQaB-sg?e=ym2qMi',
+		filter: 'research',
+		description:
+			'This research focuses on the application of the Simple Additive Weighting (SAW) method for decision support systems. The SAW method is a widely used multi-criteria decision-making technique that helps in evaluating and ranking alternatives based on multiple criteria. The research explores the effectiveness of the SAW method in providing accurate and reliable decision support, particularly in complex decision-making scenarios.',
+		tools: [
+			'Simple Additive Weighting Method',
+			'Decision Support System',
+			'Multi-Criteria Decision Making',
+			'PHP',
+			'MySQL',
+			'HTML',
+			'CSS',
+			'JavaScript'
+		]
 	}
 ];
