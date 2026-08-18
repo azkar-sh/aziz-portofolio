@@ -1,7 +1,7 @@
 export const personalInfo = {
 	fullName: 'Aziz Akbar Ashshiddiq',
 	shortName: 'Aziz',
-	role: 'Fullstack Developer',
+	role: 'Frontend expertise with growing full-stack product experience.',
 	location: 'Tangerang, Indonesia',
 	email: 'akbar.dizir@gmail.com',
 	phone: '+62 899 2099 447',
@@ -15,14 +15,13 @@ export const personalInfo = {
 };
 
 export const aboutData = {
-	profile:
-		'Full-Stack Developer with 3+ years of experience building modern web applications using React.js, Next.js, Svelte, and NestJS. Experienced in developing responsive user interfaces, integrating REST APIs, and building backend services with Prisma and PostgreSQL. Enjoy working closely with cross-functional teams to deliver scalable, maintainable, and user-focused solutions.',
+	profile: `Frontend-focused Developer with 3+ years of experience building responsive,user-focused web applications with React, Next.js, and TypeScript. I build polished interfaces and contribute to end-to-end product delivery with NestJS, Prisma, and PostgreSQL—from REST API integration to maintainable backend services.`,
 	skills: [
-		'Languages: JavaScript, TypeScript',
-		'Frontend: React.js, Next.js, Svelte.js',
-		'Backend: Express.js, NestJS',
-		'Styling & Tools: TailwindCSS, Bootstrap',
-		'Soft Skill: Team Building and Communication',
+		'Core: TypeScript, JavaScript',
+		'Frontend: React.js, Next.js, Svelte.js, Tailwind CSS, Zustand, Framer Motion',
+		'Backend: NestJS, Express.js, Prisma, PostgreSQL, BullMQ, Redis',
+		'Workflow: REST APIs, Responsive UI, CMS Integration, Git',
+		'Collaboration: Cross-functional Communication, Teamwork, Agile Methodologies',
 		'Spoken Languages: Bahasa Indonesia, English, Arabic'
 	],
 	experience: [
