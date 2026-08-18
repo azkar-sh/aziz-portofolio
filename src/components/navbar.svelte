@@ -1,6 +1,7 @@
 <script>
 	import Icon from '@iconify/svelte';
 	import { styleStore } from '../store/styleStore.js';
+	import { chatStore } from '../store/chatStore.js';
 
 	let currentTheme = 'code',
 		isMaximized = false,
@@ -10,6 +11,10 @@
 	styleStore.subscribe((value) => {
 		currentTheme = value?.theme ?? 'code';
 	});
+
+	const toggleChat = () => {
+		chatStore.update((value) => ({ ...value, isOpen: !value?.isOpen }));
+	};
 
 	const toggleMaximize = () => {
 		isMaximized = !isMaximized;
@@ -122,6 +127,15 @@
 					/>
 					{#if isMaximized}
 						<span class="hidden md:inline uppercase tracking-[0.2em] text-[10px]"> CONTACT </span>
+					{/if}
+				</button>
+				<button class:code-theme={currentTheme === 'code'} class="nav-button" on:click={toggleChat}>
+					<Icon
+						icon={currentTheme === 'code' ? 'pixelarticons:chat' : 'solar:chat-round-dots-linear'}
+						class="md:w-7 md:h-7 w-6 h-6 text-white/80"
+					/>
+					{#if isMaximized}
+						<span class="hidden md:inline uppercase tracking-[0.2em] text-[10px]"> ASK AI </span>
 					{/if}
 				</button>
 			</div>

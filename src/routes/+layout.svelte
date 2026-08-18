@@ -3,6 +3,7 @@
 	import 'animate.css';
 	import { page } from '$app/stores';
 	import Navbar from '../components/navbar.svelte';
+	import AiChat from '../components/aichat.svelte';
 	import { aboutData, personalInfo } from '$lib/portfolioData';
 
 	const siteUrl = 'https://akbarash.com';
@@ -70,6 +71,7 @@
 
 <div class="flex flex-col-reverse md:flex-row-reverse bg-background-2 h-screen w-screen">
 	<Navbar />
+	<AiChat />
 	<div class="w-full h-full overflow-auto">
 		<slot />
 	</div>
