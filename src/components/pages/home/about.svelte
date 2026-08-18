@@ -1,5 +1,6 @@
 <script>
 	import { aboutData } from '$lib/portfolioData';
+	import Icon from '@iconify/svelte';
 </script>
 
 <section id="about" class="bg-background-2 min-h-screen flex items-center justify-center">
@@ -29,11 +30,17 @@
 				</h2>
 				<div class="space-y-3 text-tag-project text-white/90">
 					{#each aboutData.experience as item}
-						<details class="border border-white/20 px-3 py-2">
-							<summary class="cursor-pointer font-semibold list-none">
-								{item.name}
+						<details class="experience-item border border-white/20 px-3 py-2">
+							<summary
+								class="flex cursor-pointer items-center justify-between gap-3 font-semibold list-none"
+							>
+								<span>{item.name} - {item.role} | {item.duration}</span>
+								<Icon
+									icon="mdi:chevron-down"
+									class="chevron h-5 w-5 shrink-0 text-white/80 transition-transform duration-200"
+								/>
 							</summary>
-							<p class="mt-2 text-white/75">{item.role} | {item.duration}</p>
+
 							<ul class="mt-2 space-y-1 list-disc list-inside text-white/90">
 								{#each item.description as description}
 									<li>{description}</li>
@@ -41,6 +48,12 @@
 							</ul>
 						</details>
 					{/each}
+
+					<style>
+						.experience-item[open] .chevron {
+							transform: rotate(180deg);
+						}
+					</style>
 				</div>
 			</div>
 
